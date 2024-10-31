@@ -57,7 +57,7 @@ export const Hero = () => {
   };
 
   return (
-    <section className=" overflow-hidden w-full max-w-5xl mx-auto h-[24rem] mt-4 relative">
+    <section className=" overflow-hidden w-full max-w-5xl mx-auto h-[24rem] mt-8 relative">
       <motion.div
         drag="x"
         dragConstraints={{
@@ -92,7 +92,7 @@ const Images = ({ imgIndex }: { imgIndex: number }) => {
               scale: imgIndex === idx ? 1 : 1,
             }}
             transition={SPRING_OPTIONS}
-            className="aspect-video w-full h-full shrink-0 px-2"
+            className="aspect-video w-full h-full shrink-0"
           >
             <Image
               src={imgSrc}

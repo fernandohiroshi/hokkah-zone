@@ -28,7 +28,7 @@ function MenuItems({ id, name, price, image, addCart }: MenuItemsProps) {
           <div>{price.toFixed(2)}</div>
         </div>
       </div>
-      <button className="bg-cyan-900 hover:bg-cyan-700 ease-in-out duration-300 rounded-xl">
+      <button className="bg-cyan-900 hover:bg-cyan-700 ease-in-out py-1 duration-300 rounded-xl">
         add +
       </button>
     </div>

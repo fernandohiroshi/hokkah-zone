@@ -4,7 +4,7 @@ import React from "react";
 
 function Sections() {
   return (
-    <section className="grid grid-cols-12 gap-4 px-2">
+    <section className="grid grid-cols-12 gap-4 py-8">
       {/* NARGUILES */}
       <Link
         href="/narguiles"

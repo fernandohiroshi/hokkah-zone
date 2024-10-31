@@ -13,7 +13,7 @@ const imgs = [
   "https://images.pexels.com/photos/7928074/pexels-photo-7928074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
 ];
 
-const ONE_SECOND = 800;
+const ONE_SECOND = 500;
 const AUTO_DELAY = ONE_SECOND * 10;
 const DRAG_BUFFER = 50;
 
@@ -57,7 +57,7 @@ export const Hero = () => {
   };
 
   return (
-    <section className=" overflow-hidden w-full max-w-5xl mx-auto h-[24rem] mt-8 relative">
+    <section className=" overflow-hidden w-full max-w-5xl mx-auto h-[20rem] relative">
       <motion.div
         drag="x"
         dragConstraints={{
@@ -76,7 +76,17 @@ export const Hero = () => {
       >
         <Images imgIndex={imgIndex} />
       </motion.div>
-      <div className="absolute w-full h-full bg-gradient-to-t from-transparent to-slate-950 z-50 top-0 left-0" />
+      <div className="absolute w-full h-full bg-gradient-to-t from-slate-950/40 to-slate-950 z-40 top-0 left-0">
+        <div className="flex flex-col max-w-md mx-auto justify-center items-center w-full h-full text-center">
+          <h2 className="text-3xl font-semibold">
+            Tabacalera y Productos de Narguile 
+          </h2>
+          <p className="text-sm mt-4">
+            Trabajamos al por mayor. Para más información, contáctenos por
+            WhatsApp.
+          </p>
+        </div>
+      </div>
     </section>
   );
 };
